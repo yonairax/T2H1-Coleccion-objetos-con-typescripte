@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librería</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+</head>
+
+<body style="font-family: Georgia;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Libros.html">Libros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Estudiante.html">Estudiantes</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1>Librería</h1>
+    <form id="frmedit">
+        <div id="form_Libro">
+            <label for="codigo">Código:</label>
+            <input type="text" id="codigo">
+            <label for="categoria">Categoría:</label>
+            <select id="categoria">
+                <option value="No Opcion">-----Seleccionar una categoría-----</option>
+                <option value="Literatura">Literatura</option>
+                <option value="Salud">Salud</option>
+                <option value="Informática">Informática</option>
+                <option value="Erótico">Erótico</option>
+            </select>
+            <label for="editorial">Editorial:</label>
+            <input type="text" id="editorial">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre">
+            <label for="autor">Autor:</label>
+            <input type="text" id="autor">
+            <label for="anio">Año de publicación:</label>
+            <input type="number" id="anio">
+            <button id="add-product-button" type="submit" style="background-color: #4682A9;">Agregar Libro</button>
+        </div>
+    </form>
+    <br>
+    <div class="row" id="tablasLibros">
+        <div class="col-md-6" id="seccion-libros">
+
+            <table class="table" id="tablalibros">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Código</th>
+                        <th scope="col">Categoría</th>
+                        <th scope="col">Editorial</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Autor</th>
+                        <th scope="col">Año de publicación</th>
+                        <th scope="col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="main.ts"></script>
+</body>
+
+</html>
